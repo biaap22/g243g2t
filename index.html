@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capsula do Tempo</title>
 </head>
-<link rel="stylesheet" href="./AULA1/estilo/base.css">
-<script src="./AULA1/script/script.js" defer></script>
+<link rel="stylesheet" href="./estilo/base.css">
+<script src="./script/script.js" defer></script>
 <body>
 <header class="barra">
     <div class="barra_conteudo">
@@ -20,12 +20,20 @@
         <div class="barra_login">
             <div class="form_base">
                 <form class="login">
-                    <input type="text" id="usuario" name="usuario" class="login_usuario" >
+                   <div class= "campoInput">
+                    <input type="text" id="usuario" name="usuario" class="login_usuario" required >
                     <label for="usuario">Usuário</label>
-                    <input type="password"  id="senha" class="login_usuario">
+                    </div>
+                    <div class= "campoInput">
+                    <input type="password"  id="senha" class="login_usuario" required>
                    <label for="senha">senha</label>
+                </div>
+                <div class= "campoInput">
                    <button type="submit">Logar</button>
+                </div>
                 </form>
+
+
             </div>
             <div class="form_esqueci_senha">
                 <a href="esqueci_senha.html"> Esqueci a senha</a>
